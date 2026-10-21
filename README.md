@@ -48,24 +48,18 @@ Why it helps: A consistent structure makes responses easier to navigate and make
 
 1. Clone the repository.
 2. Create and activate a virtual environment.
+
+   python -m venv .venv
+   .venv\Scripts\Activate.ps1
+
 3. Install dependencies:
 
    pip install -r requirements.txt
 
 4. Configure OPENAI_API_KEY as an environment variable.
+
+   setx OPENAI_API_KEY "YOUR_API_KEY_HERE"
+
 5. Run the application:
 
    python main.py
-
-## Limitations
-
-The application analyzes code but does not execute it.
-AI-generated fixes may be incorrect and should be reviewed.
-
-## Future Improvements
-
-- Syntax-highlighted code editor
-- Copy corrected code button
-- Save and load debugging sessions
-- Automated tests for suggested fixes
-- More prompt patterns and response evaluation
